@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/mediaQuary.css">
     <title>Mahin Jaman</title>
@@ -26,7 +27,7 @@
 
                 <div class="header-text">
                     <p>Junior Web-designer & Developer</p>
-                    <h1>Hi, I'm <span>Mahin</span><br> Jaman From Bangladesh</h1>
+                        <h1>Hi, I'm <span>Mahin</span><br> Jaman From Bangladesh</h1>
                 </div>
             </div>
         </div>
@@ -39,7 +40,7 @@
     
             <div class="container">
 
-                <div class="row gap-5">
+                <div class="row gap-5 justify-content-center ">
 
                     <div class="col col-5 about-col-1">
                         <img src="images/author.jpg" alt="Author" class="img-fluid rounded rounded-2">
@@ -48,19 +49,35 @@
                     <div class="col col-5 about-col-2  ">
                 
                         <h1 class="sub-title">About Me</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quaerat ea sunt accusantium iure corporis eos molestiae. Magni in officia veritatis maiores magnam veniam, aspernatur, repudiandae nam eos corrupti dignissimos quidem est. Vero velit asperiores sit, in natus eius obcaecati culpa nihil dicta dolorem quas ratione tenetur tempora quisquam quae.</p>
+                        <p>Hello there! I'm Mahin Jaman, a passionate junior web developer and designer with a love for crafting digital
+                        experiences that leave a lasting impression. My journey in the world of web development began with a curiosity to bring ideas to life on the internet.</p>
 
                         <div class="tab-title">
-                            <p class="tab-links active-link">Skills</p>
-                            <p class="tab-links">Experience</p>
-                            <p class="tab-links">Education</p>
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
                         </div>
 
-                        <div class="tab-content">
+                        <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>UI/XI</span> <br> Development</li>
-                                <li><span>Web-design</span> <br> Development</li>
-                                <li><span>Web-design</span> <br> Development</li>
+                                <li><span>UI/XI</span> <br> Design Web Interfaces</li>
+                                <li><span>Web-Development</span> <br> Web App development</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022 - Current</span> <br> UI/XI Design Traning At Learn_With_Sumit & <br> Hablu Programmer</li>
+                                <li><span>2023 - Current </span> <br> Web-development Training at Programming Hero</li>
+                                <li><span>2023 - Current </span> <br> Intership at DetectiveSEO</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021</span> <br> JSC from BCHS Tangail</li>
+                                <li><span>2022 - 2023</span> <br> Web-Development Training at Programming Hero </li>
+                                <li><span>2023</span> <br> SSC from BCHS Tangail</li>
                             </ul>
                         </div>
                     </div>
@@ -71,7 +88,52 @@
 
         </div>
     </section>
+
+    <!-- ------------------------------------Services-------------------------------------  -->
+
+    <section>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title text-center pb-5">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-brands fa-codepen"></i>
+                        <h2>Web-Design</h2>
+                        <p>Welcome to a world where aesthetics meet functionality, and user experience is paramount. I'm Mahin Jaman, and I specialize in providing Website Design Services that breathe life into your digital vision.</p>
+                        <a href="#" class="button">Learn More...</a>
+                        <span class="top"></span>
+                        <span class="right"></span>
+                        <span class="bottom"></span>
+                        <span class="left"></span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web-Development</h2>
+                        <p>Welcome to the digital realm where your ideas take shape and functionality meets innovation! I'm Mahin Jaman, and I specialize in providing cutting-edge Website Development Services tailored to your unique needs.</p>
+                        <a href="#" class="button">Learn More...</a>
+                        <span class="top"></span>
+                        <span class="right"></span>
+                        <span class="bottom"></span>
+                        <span class="left"></span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gears"></i>
+                        <h2>Branding</h2>
+                        <p>Transforming websites into unforgettable digital experiences requires more than just aesthetics—it demands a carefully crafted brand identity. Welcome to my Website Branding Services, where I specialize in shaping compelling digital personas for businesses like yours.</p>
+                        <a href="#" class="button">Learn More...</a>
+                        <span class="top"></span>
+                        <span class="right"></span>
+                        <span class="bottom"></span>
+                        <span class="left"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- javaScript File -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/02cb37aaea.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
